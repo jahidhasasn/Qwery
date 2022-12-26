@@ -1,0 +1,40 @@
+
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+
+
+/*Color Change*/
+// Create your own map
+$custom-colors: (
+  "navbar-color": #FFA343,
+);
+$custom-fontsize: (
+    "commonfontsize": 18px,
+);
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+$font-sizes: map-merge($font-sizes, $custom-fontsize);
+
+
+$navbar-light-active-color:blue;
+$navbar-light-color: #fff;
+$navbar-light-hover-color: blue;
+$navbar-light-disabled-color: red;
+$input-bg: transparent;
+$input-border-color: transparent;
+$input-focus-bg: transparent;
+$input-placeholder-color: blue;
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+/*Font family*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+    --bs-body-font-family:'Open Sans', sans-serif;
+}
